@@ -7,3 +7,6 @@ foreach ( $a as $item) {
     $result += $item;
 }
 echo $result . "\n";
+
+
+// этот файл
