@@ -8,5 +8,5 @@ foreach ( $a as $item) {
 }
 echo $result . "\n";
 
-
+echo $result . "\n";
 // этот файл
