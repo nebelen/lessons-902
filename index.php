@@ -8,26 +8,15 @@
 </head>
 
 <body>
-<form method="post" action="action.php">
+<form method="post" action="task2.php">
     <div class="row">
         <label for="email">Email</label>
         <input type="email" name="email" id="email">
         <?= !empty($errors['email']) ? $errors['email'] : '' ?>
     </div>
 
-    <div class="row">
-        <label for="password">Пароль</label>
-        <input type="password" name="password" id="password">
-        <?= !empty($errors['password']) ? $errors['password'] : '' ?>
-    </div>
 
-    <div class="row">
-        <label for="passwordConfirmation">Подтверждение пароля</label>
-        <input type="password" name="passwordConfirmation" id="passwordConfirmation">
-        <?= !empty($errors['passwordConfirmation']) ? $errors['passwordConfirmation'] : '' ?>
-    </div>
-
-    <button>Зарегистрироваться</button>
+    <button>Подписаться</button>
 </form>
 </body>
 
