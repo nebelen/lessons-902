@@ -5,3 +5,4 @@ foreach ($arr as $key=>$elem) {
 
     echo $key.'- зарплатой'. ' '.$elem .' '. 'долларов' . "<br/>";
 }
+

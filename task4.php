@@ -5,6 +5,5 @@ foreach ($arr as $key=>$color) {
     $ru[] = $color;
 }
 
-
 var_dump($en);
 var_dump($ru);
