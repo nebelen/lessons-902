@@ -14,6 +14,10 @@ if (empty($_POST['email'])) {
 if (empty($_POST['password'])) {
     $errors['password'] = 'Введите пароль';
 }
+
+if (empty($_POST['firstName'])) {
+    $errors['firstName'] = 'Введите имя';
+}
 if (empty($_POST['passwordConfirmation'])) {
     $errors['passwordConfirmation'] = 'Введите подтверждение пароля';
 } elseif ($_POST['password'] != $_POST['passwordConfirmation']) {
@@ -24,7 +28,7 @@ if ($errors) {
     exit();
 }
 $file = fopen('users.txt', 'a');
-$line = $_POST['email'] . "\t" . $_POST['password'] . "\n";
+$line = $_POST['email'] . "\t" . $_POST['firstName'] . "\t" . $_POST['password'] . "\n";
 fputs($file, $line);
 fclose($file);
 header('Location: thanks.html');
